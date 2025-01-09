@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import edit from '../assets/images/pencil.png';
 import arrowLeft from '../assets/images/arrow-left.png';
-import emptyprofile from '../assets/images/emptyprofile.jpg'; 
+import emptyprofile from '../assets/images/emptyProfile.jpg'; 
 import { Link, useNavigate } from 'react-router-dom';
 
 function UserProfile() {
