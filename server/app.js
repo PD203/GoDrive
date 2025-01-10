@@ -14,11 +14,17 @@ const rideRoutes = require('./routes/ride')
 
 connectToDb()
 
-app.use(cors())
+const corsOptions = {
+  origin: "https://godriveclient.vercel.app/", 
+  credentials: true, 
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], 
+};
+
+// Use CORS middleware
+app.use(cors(corsOptions));
 
 // Your other middleware
 app.use(express.json());
-app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 app.use(cookieParser());
 
