@@ -8,7 +8,7 @@ let io;
 function initializeSocket(server) {
   io = socketIo(server, {
     cors: {
-      origin: "*",
+      origin: "https://godrive-self.vercel.app/",
       methods: ["GET", "POST"],
     },
   });
