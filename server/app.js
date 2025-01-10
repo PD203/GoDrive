@@ -15,12 +15,23 @@ const rideRoutes = require('./routes/ride')
 connectToDb()
 
 app.use(cors())
+
+app.use(
+  cors({
+    origin: "https://go-drive-theta.vercel.app", // Your frontend URL
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true, // If you need cookies or auth headers
+  })
+);
+
+// Your other middleware
+app.use(express.json());
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 app.use(cookieParser());
 
 app.get("/", (req, res) => {
-  res.send("API working");
+  res.send("API working fine");
 });
 
 
