@@ -10,7 +10,7 @@ function initializeSocket(server) {
     cors: {
      origin: [
       "https://godrive-self.vercel.app",
-      "https://godriveclient.vercel.app/",
+      "https://godriveclient.vercel.app",
     ],
       methods: ["GET", "POST"],
     },
