@@ -20,14 +20,14 @@ app.use(express.urlencoded({extended: true}))
 app.use(cookieParser());
 
 app.get("/", (req, res) => {
-  res.send("API working with api/v1");
+  res.send("API working");
 });
 
 
 // using Routes
-app.use('/api/v1/user', userRouter)
-app.use('/api/v1/captain', captainRouter)
-app.use('/api/v1/maps', mapRoutes)
-app.use('/api/v1/ride', rideRoutes)
+app.use('/user', userRouter)
+app.use('/captain', captainRouter)
+app.use('/maps', mapRoutes)
+app.use('/ride', rideRoutes)
 
 module.exports = app;
