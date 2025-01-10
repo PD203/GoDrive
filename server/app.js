@@ -15,12 +15,15 @@ const rideRoutes = require('./routes/ride')
 connectToDb()
 
 app.use(cors())
+
+// Your other middleware
+app.use(express.json());
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 app.use(cookieParser());
 
 app.get("/", (req, res) => {
-  res.send("API working");
+  res.send("API working fine");
 });
 
 

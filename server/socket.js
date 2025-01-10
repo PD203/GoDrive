@@ -8,9 +8,10 @@ let io;
 function initializeSocket(server) {
   io = socketIo(server, {
     cors: {
-      origin: "*",
+     origin: "*",
       methods: ["GET", "POST"],
     },
+    credentials: true,
   });
 
   io.on("connection", (socket) => {
