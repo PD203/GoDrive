@@ -3,7 +3,7 @@ import { io } from 'socket.io-client';
 
 export const SocketContext = createContext();
 
-const socket = io(`${import.meta.env.SOCKET_BASE_URL || 'http://localhost:4000/'}`);
+const socket = io(`${import.meta.env.SOCKET_BASE_URL || 'https://godrive-self.vercel.app/'}`);
 
 const SocketProvider = ({ children }) => {
     useEffect(() => {
