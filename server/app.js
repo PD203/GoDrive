@@ -18,7 +18,7 @@ app.use(cors())
 
 app.use(
   cors({
-    origin: ["https://godrive-self.vercel.app/", "https://godriveclient.vercel.app/"],
+    origin: ["https://godrive-self.vercel.app", "https://godriveclient.vercel.app"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true, 
   })
