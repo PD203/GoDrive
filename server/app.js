@@ -34,9 +34,9 @@ app.get("/", (req, res) => {
 
 
 // using Routes
-app.use('/user', userRouter)
-app.use('/captain', captainRouter)
-app.use('/maps', mapRoutes)
-app.use('/ride', rideRoutes)
+app.use('user', userRouter)
+app.use('captain', captainRouter)
+app.use('maps', mapRoutes)
+app.use('ride', rideRoutes) // "/" removed 
 
 module.exports = app;
