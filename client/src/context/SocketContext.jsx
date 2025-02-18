@@ -3,7 +3,7 @@ import { io } from 'socket.io-client';
 
 export const SocketContext = createContext();
 
-const socket = io(import.meta.env.VITE_SOCKET_BASE_URL || "https://godrive-edr5.onrender.com", {
+const socket = io(import.meta.env.VITE_SOCKET_BASE_URL || "https://godrive-h55q.onrender.com", {
     transports: ["websocket"], // 🔥 Critical for Render deployment
   });
 

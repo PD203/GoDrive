@@ -8,7 +8,7 @@ let io;
 function initializeSocket(server) {
   io = socketIo(server, {
     cors: {
-     origin: "https://godrive-1.onrender.com/",
+     origin: "https://godrive-1.onrender.com",
       methods: ["GET", "POST"],
     },
     credentials: true,
