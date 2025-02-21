@@ -15,7 +15,7 @@ const rideRoutes = require('./routes/ride')
 connectToDb()
 
 const corsOptions = {
-  origin: "https://godrive-1.onrender.com/", 
+  origin: ["https://godrive-1.onrender.com", "https://godrive-h55q.onrender.com"], 
   credentials: true, 
   methods: ['GET', 'POST', 'PUT', 'DELETE'], 
 };
