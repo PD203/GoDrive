@@ -15,10 +15,6 @@ GoDrive is a real-time ride-sharing platform where users can request rides, and 
 - Ride Status Updates : Tracks ride progress (Pending, Accepted, In Progress.
 
 
-## Demo
-
-https://godrive-1.onrender.com/
-
 
 ## Built With
 
